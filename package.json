@@ -43,5 +43,8 @@
     "build": "rollup -c",
     "build-storybook": "build-storybook"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/cotontigeh"
+  }
 }
