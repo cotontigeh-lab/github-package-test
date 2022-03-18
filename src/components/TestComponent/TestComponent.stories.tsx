@@ -7,6 +7,7 @@ export default {
   component: TestComponent,
   argTypes: {
     backgroundColor: { control: 'color' },
+    color: { control: 'textColor' },
   },
 } as ComponentMeta<typeof TestComponent>
 
