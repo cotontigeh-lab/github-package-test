@@ -1,4 +1,4 @@
-name: Publish package to GitHub Packages
+name: GitHub Packages
 # on:
 #   release:
 #     types: [created]
@@ -7,21 +7,26 @@ on:
     branches:
       - master
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
       # Setup .npmrc file to publish to GitHub Packages
-      - uses: actions/setup-node@v2
+      - name: Setup node for pkg.github
+        uses: actions/setup-node@v2
         with:
           node-version: '16.14.0'
           registry-url: 'https://npm.pkg.github.com'
           # Defaults to the user or organization that owns the workflow file
           scope: '@cotontigeh'
-      - run: yarn install --frozen-lockfile
-      - run: npm publish
+      - name: Install dependencies
+        # Same as npm ci
+        run: yarn install --frozen-lockfile
+      - name: Publish repo
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
