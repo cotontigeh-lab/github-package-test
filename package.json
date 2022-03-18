@@ -50,7 +50,7 @@
     "storybook": "start-storybook -p 6006",
     "build": "rollup -c",
     "build-storybook": "build-storybook",
-    "chromatic": "npx chromatic --project-token="
+    "chromatic": "chromatic --project-token=CHROMATIC_PROJECT_TOKEN"
   },
   "dependencies": {},
   "publishConfig": {
