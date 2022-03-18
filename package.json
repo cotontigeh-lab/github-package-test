@@ -39,6 +39,8 @@
   "scripts": {
     "tsw": "npx tsc -w",
     "tsc": "npx tsc --noEmit",
+    "dev": "npx concurrently --kill-others \"yarn start-storybook -p 6006\" \"rollup -c -w\"",
+    "watch": "rollup -c -w",
     "storybook": "start-storybook -p 6006",
     "build": "rollup -c",
     "build-storybook": "build-storybook"
