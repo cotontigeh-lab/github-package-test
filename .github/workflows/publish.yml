@@ -1,11 +1,11 @@
 name: GitHub Packages
-# on:
-#   release:
-#     types: [created]
 on:
-  push:
-    branches:
-      - master
+  release:
+    types: [created]
+# on:
+#   push:
+#     branches:
+#       - master
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -24,7 +24,7 @@ jobs:
           # Defaults to the user or organization that owns the workflow file
           scope: '@cotontigeh'
       - name: Install dependencies
-        # Same as npm ci
+        # Same as $ npm ci
         run: yarn install --frozen-lockfile
       - name: Publish repo
         run: npm publish
