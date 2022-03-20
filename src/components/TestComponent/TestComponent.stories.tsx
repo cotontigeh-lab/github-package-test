@@ -15,7 +15,7 @@ export default {
 const Template: Story<TestComponentProps> = (props) => <TestComponent {...props} />
 
 export const WithoutBackground = Template.bind({})
-WithoutBackground.args = { children: <div>Without background</div> }
+WithoutBackground.args = { children: <div>Without background oe</div> }
 WithoutBackground.storyName = 'Without Background'
 
 export const WithBackground = Template.bind({})
