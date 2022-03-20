@@ -4,7 +4,8 @@ on:
   push:
     branches: [master, develop]
   pull_request:
-    types: [opened, reopened, synchronize]
+    types:
+      - opened
     branches:
       - 'feature/**'
 
