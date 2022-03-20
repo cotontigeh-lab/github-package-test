@@ -4,10 +4,7 @@ on:
   push:
     branches: [master, develop]
   pull_request:
-    types:
-      - opened
-    branches:
-      - 'feature/**'
+    types: [opened, reopened, synchronize]
 
 jobs:
   tests:
