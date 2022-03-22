@@ -3,4 +3,6 @@ lib
 .npmrc
 .env
 build-storybook.log
+storybook-static
 .vscode
+__node_modules

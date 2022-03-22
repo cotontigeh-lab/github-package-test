@@ -1,11 +1,8 @@
-name: GitHub Packages
+name: Publish package to GitHub Packages
 on:
   release:
     types: [created]
-# on:
-#   push:
-#     branches:
-#       - master
+
 jobs:
   publish:
     runs-on: ubuntu-latest

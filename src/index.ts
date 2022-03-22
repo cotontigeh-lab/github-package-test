@@ -1,3 +1,5 @@
 import TestComponent from './components/TestComponent'
+import TypographyComponent from './components/Typography'
 
-export { TestComponent }
+// theme ici
+export { TestComponent, TypographyComponent }

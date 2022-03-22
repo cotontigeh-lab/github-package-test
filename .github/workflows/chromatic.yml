@@ -7,9 +7,9 @@ name: 'Chromatic'
 on:
   push:
     branches:
-      # - master
-      - develop
-      - 'release/**'
+      #- master
+      #- develop
+      #- 'release/**'
 
 # List of jobs
 jobs:
