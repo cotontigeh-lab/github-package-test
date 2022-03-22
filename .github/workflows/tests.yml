@@ -2,7 +2,7 @@ name: Tests
 
 on:
   push:
-    branches: [master]
+    branches: [prout]
   pull_request:
     # types: [opened, reopened, synchronize]
 
