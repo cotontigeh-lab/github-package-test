@@ -1,11 +1,11 @@
 {
-  "name": "@empruntemontoutou/component-librarie",
-  "version": "1.0.0",
-  "description": "React Web Components libraries for emprunteMonToutou",
+  "name": "@cotontigeh/npm-package-test",
+  "version": "1.0.2",
+  "description": "React Web Components libraries for cotontigeh",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",
-  "repository": "git@github.com:empruntemontoutou/component.empruntemontoutou.com.git",
+  "repository": "git@github.com:cotontigeh/npmPackageTest.git",
   "author": "Adrien E. <cotontigeh@gmail.com>",
   "license": "MIT",
   "files": [
