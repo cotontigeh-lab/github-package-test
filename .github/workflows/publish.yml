@@ -29,6 +29,9 @@ jobs:
       - name: Install dependencies
         # Same as $ npm ci
         run: yarn install --frozen-lockfile
+      - name: Build
+        # Same as $ npm ci
+        run: yarn build
       - name: Publish repo
         run: npm publish
         env:
